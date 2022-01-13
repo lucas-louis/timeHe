@@ -20,7 +20,7 @@ const Popup = ({ isOpen, onClose, title, children }: PopupProps): JSX.Element =>
 			<ModalBody mb="32px">{children}</ModalBody>
 
 			<ModalFooter flexDirection="column" alignItems="center">
-				<Button w="100%" onClick={onClose} bgColor="#DFB791" id="ipc-modal-close-button">
+				<Button w="100%" onClick={onClose} bgColor="#DFB791" id="timehe-modal-close-button">
 					<CloseIcon />
 				</Button>
 			</ModalFooter>

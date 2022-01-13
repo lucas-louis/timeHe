@@ -24,7 +24,7 @@ const AuthRoute = ({ children, ...rest }: AuthRouteProps): JSX.Element => (
 					}}
 					fontWeight="700"
 					color={titleColor}
-					id="ipc-title"
+					id="timehe-title"
 					textAlign="center"
 					fontFamily="Sora"
 				>
@@ -37,7 +37,7 @@ const AuthRoute = ({ children, ...rest }: AuthRouteProps): JSX.Element => (
 					}}
 					fontWeight="700"
 					color={titleColor}
-					id="ipc-title"
+					id="timehe-subtitle"
 					textAlign="center"
 					fontFamily="Sora"
 				>
