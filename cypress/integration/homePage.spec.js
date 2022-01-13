@@ -7,10 +7,10 @@ describe('Good front for HomePage', () => {
 	});
 
 	it('Good title', () => {
-		cy.get('#timehe-title').should('contain', eventName);
+		cy.get('#timeHe-title').should('contain', eventName);
 	});
 
 	it('Good sub title', () => {
-		cy.get('#timehe-subtitle').should('contain', eventSubName);
+		cy.get('#timeHe-subtitle').should('contain', eventSubName);
 	});
 });

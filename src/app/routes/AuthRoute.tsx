@@ -24,7 +24,7 @@ const AuthRoute = ({ children, ...rest }: AuthRouteProps): JSX.Element => (
 					}}
 					fontWeight="700"
 					color={titleColor}
-					id="timehe-title"
+					id="timeHe-title"
 					textAlign="center"
 					fontFamily="Sora"
 				>
@@ -37,7 +37,7 @@ const AuthRoute = ({ children, ...rest }: AuthRouteProps): JSX.Element => (
 					}}
 					fontWeight="700"
 					color={titleColor}
-					id="timehe-subtitle"
+					id="timeHe-subtitle"
 					textAlign="center"
 					fontFamily="Sora"
 				>

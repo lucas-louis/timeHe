@@ -1,6 +1,6 @@
-export const eventName = 'Security Pool 2022';
+export const eventName = 'Name of the event';
 
-export const eventSubName = 'Day05 Blockchain';
+export const eventSubName = 'Sub Name of the event';
 
 export const modalBackgroundColor = '#132b3d';
 

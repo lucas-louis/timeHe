@@ -1,46 +1,138 @@
-# Getting Started with Create React App
+# InterPlanetaryCloud
+A personal file storage and management system built on top of [IPFS](https://ipfs.io/), protecting your data.  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src=".github/assets/ipc.gif" width="80%" />
+ </div>
 
-## Available Scripts
+## Installation :wrench:
 
-In the project directory, you can run:
+**1) Install Docker**  
+Follow this [official guide](https://docs.docker.com/get-docker/) to install Docker.  
+If you want to play a little bit with Docker, you can follow this [tutorial](https://docker-curriculum.com) or even our [workshop](https://github.com/PoCInnovation/Workshops/tree/master/software/04.Docker) !
 
-### `npm start`
+**2) Install IPC**  
+```
+# Get the project
+git clone git@github.com:PoCInnovation/InterPlanetaryCloud.git
+cd InterPlanetaryCloud
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Build IPC docker image
+docker build . -t ipc:latest
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Quickstart ⏩
 
-### `npm test`
+**Run IPC :rocket:**  
+```
+# Run IPC docker image
+docker run -p 3000:3000 ipc:latest
+```
+You are now ready to access to your decentralized cloud :boom: !
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features :dizzy:
+  
+<details>
+  <summary>Home Page</summary>
+  
+ ![Home Page](.github/assets/home.png)
 
-### `npm run build`
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<details>
+  <summary>Signup Page</summary>
+  
+ ![Signup Page](.github/assets/signup.png)
+ 
+</details>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<details>
+  <summary>Signup Page - Mnemonics given</summary>
+  
+ ![Signup Page Mnemonics](.github/assets/signupMnemonics.png)
+ 
+</details>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<details>
+  <summary>Login Page</summary>
+  
+ ![Login Page](.github/assets/login.png)
+ 
+</details>
 
-### `npm run eject`
+<details>
+  <summary>Dashboard</summary>
+  
+ ![Dashboard](.github/assets/dashboard.png)
+ 
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<details>
+  <summary>Dashboard - Upload document</summary>
+  
+ ![Dashboard Upload](.github/assets/dashboardUpload.png)
+ 
+</details>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How ? :thinking:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Technologies 🧑‍💻**
++ [React](https://reactjs.org/docs/getting-started.html)
++ [Typescript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
++ [Chakra UI](https://chakra-ui.com)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Database :file_folder:**  
+We use [Aleph SDK TS](https://github.com/aleph-im/aleph-sdk-ts#readme).
 
-## Learn More
+**Security 🛡️**  
+Every file that you upload will be encrypted thanks to [crypto-js](https://www.npmjs.com/package/crypto-js).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Our PoC team :ok_hand:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### September 2021 - Today
+Developers:  
+| [<img src="https://github.com/lucas-louis.png?size=85" width=85><br><sub>Lucas Louis</sub>](https://github.com/lucas-louis) | [<img src="https://github.com/lolboysg.png?size=85" width=85><br><sub>Matéo Viel</sub>](https://github.com/lolboysg)
+| :---: | :---: |
+
+Project Managers:  
+| [<img src="https://github.com/adrienfort.png?size=85" width=85><br><sub>Adrien Fort</sub>](https://github.com/adrienfort)
+| :---: |
+
+### March 2021 - September 2021
+Developers:  
+| [<img src="https://github.com/adrienfort.png?size=85" width=85><br><sub>Adrien Fort</sub>](https://github.com/adrienfort) | [<img src="https://github.com/rojasdiegopro.png?size=85" width=85><br><sub>Diego Rojas</sub>](https://github.com/rojasdiegopro) | [<img src="https://github.com/MrZalTy.png?size=85" width=85><br><sub>Lorenzo Carneli</sub>](https://github.com/MrZalTy)
+| :---: | :---: | :---: |
+
+Project Managers:  
+| [<img src="https://github.com/NaadiQmmr.png?size=85" width=85><br><sub>Adina Cazalens</sub>](https://github.com/NaadiQmmr) | [<img src="https://github.com/PtitLuca.png?size=85" width=85><br><sub>Luca Georges Francois</sub>](https://github.com/PtitLuca)
+| :---: | :---: |
+
+Reviewers :  
+| [<img src="https://github.com/TomChv.png?size=85" width=85><br><sub>Tom Chauveau</sub>](https://github.com/TomChv)
+| :---: |
+
+<h2 align=center>
+Organization
+</h2>
+
+<p align='center'>
+    <a href="https://www.linkedin.com/company/pocinnovation/mycompany/">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+    </a>
+    <a href="https://www.instagram.com/pocinnovation/">
+        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
+    </a>
+    <a href="https://twitter.com/PoCInnovation">
+        <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">
+    </a>
+    <a href="https://discord.com/invite/Yqq2ADGDS7">
+        <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white">
+    </a>
+</p>
+<p align=center>
+    <a href="https://www.poc-innovation.fr/">
+        <img src="https://img.shields.io/badge/WebSite-1a2b6d?style=for-the-badge&logo=GitHub Sponsors&logoColor=white">
+    </a>
+</p>
+
+> :rocket: Don't hesitate to follow us on our different networks, and put a star 🌟 on `PoC's` repositories

@@ -1,15 +1,15 @@
 BUILD_PATH			=	.
-TE_DOCKER_NAME		=	timehe:latest
+TE_DOCKER_NAME		=	timeHe:latest
 PORT				=	3000
 
 all			:	build start
 
 build		:
-	@echo "🚧 Building timehe's docker image..."
+	@echo "🚧 Building timeHe's docker image..."
 	docker build $(BUILD_PATH) -t $(TE_DOCKER_NAME)
 
 start		:
-	@echo "🚀 Starting timehe's docker image..."
+	@echo "🚀 Starting timeHe's docker image..."
 	docker run -p $(PORT):$(PORT) $(TE_DOCKER_NAME)
 
 tests-no-ui	:
