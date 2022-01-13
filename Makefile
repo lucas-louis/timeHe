@@ -1,5 +1,5 @@
 BUILD_PATH			=	.
-TE_DOCKER_NAME		=	timeHe:latest
+TE_DOCKER_NAME		=	timehe:latest
 PORT				=	3000
 
 all			:	build start
