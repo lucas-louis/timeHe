@@ -1,4 +1,4 @@
-import { VStack, HStack, Text, Divider } from '@chakra-ui/react';
+import { VStack, Text, Divider } from '@chakra-ui/react';
 
 import { ActivityProps } from 'types/Activities';
 
