@@ -85,7 +85,7 @@ You can now see your clock app :boom: !
 
 Just [here](https://time-he.vercel.app/)
 
-## Our PoC team 👌
+## Our team 👌
 
 Developer:  
 | [<img src="https://github.com/lucas-louis.png?size=85" width=85><br><sub>Lucas Louis</sub>](https://github.com/lucas-louis) |
