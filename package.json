@@ -6,8 +6,6 @@
     "@chakra-ui/icons": "^1.0.15",
     "@chakra-ui/react": "^1.7.4",
     "@chakra-ui/theme-tools": "^1.1.9",
-    "@fontsource/dosis": "^4.5.1",
-    "@fontsource/fredoka-one": "^4.5.0",
     "@fontsource/sora": "^4.5.0",
     "framer-motion": "^4",
     "moment-timezone": "^0.5.34",
