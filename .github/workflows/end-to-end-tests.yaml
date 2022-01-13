@@ -11,12 +11,12 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Create timeHe docker image
-        run: docker build . -t timeHe:latest
+        run: docker build . -t timehe:latest
 
       - name: Run cypress
         uses: cypress-io/github-action@v2
         with:
-          start: docker run -p 3000:3000 timeHe:latest
+          start: docker run -p 3000:3000 timehe:latest
           wait-on: "http://localhost:3000"
 
       - name: Get screenshots
