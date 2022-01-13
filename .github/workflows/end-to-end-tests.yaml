@@ -1,0 +1,34 @@
+name: End-to-end tests
+
+on: [push]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Create timeHe docker image
+        run: docker build . -t timehe:latest
+
+      - name: Run cypress
+        uses: cypress-io/github-action@v2
+        with:
+          start: docker run -p 3000:3000 timehe:latest
+          wait-on: "http://localhost:3000"
+
+      - name: Get screenshots
+        uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+      - name: Get videos
+        uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+          name: cypress-videos
+          path: cypress/videos
