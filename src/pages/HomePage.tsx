@@ -40,7 +40,7 @@ const HomePage = (): JSX.Element => {
 			<VStack fontSize={{ base: '56px', sm: '80px' }} fontFamily="Sora" fontWeight="600" color="white">
 				<Clock format="HH:mm:ss" ticking timezone="Europe/Paris" />
 			</VStack>
-			<Box w="100%" m={{ base: '0 0 24px 0 !important', sm: '32px !important' }}>
+			<Box w="100%" m="0 0 24px 0 !important">
 				<VStack w="100%" maxH="512px" spacing="16px" pt={{ base: '8px', sm: '40px' }} overflow="hidden">
 					{events.map((event) => {
 						if (event.name !== '') {
