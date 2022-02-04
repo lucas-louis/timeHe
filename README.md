@@ -69,7 +69,10 @@ export const activities = [
 
 **Run timeHe 🚀**
 ```
-# Run timhe docker image
+# If it's the first time => Build and Run timeHe docker image
+make
+
+# Otherwise => Run timeHe docker image
 make start
 ```
 You can now see your clock app :boom: !
