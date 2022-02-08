@@ -15,6 +15,8 @@ import { ActivityElement } from 'types/Activities';
 
 import { CheckEndingEvent } from 'utils/CheckEndingEvent';
 
+import { secondaryColor } from 'config/AppConfig';
+
 const HomePage = (): JSX.Element => {
 	const [events, setEvents] = useState([{ name: '', startingDate: '', endingDate: '', description: '' }]);
 	const { isOpen, onOpen, onClose } = useDisclosure();
@@ -57,6 +59,7 @@ const HomePage = (): JSX.Element => {
 				}}
 				borderRadius="100px"
 				w="32px"
+				bg={secondaryColor}
 			>
 				<ArrowDownIcon w="24px%" h="24px" />
 			</Button>

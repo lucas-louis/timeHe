@@ -3,6 +3,7 @@ import { Route, RouteProps } from 'react-router-dom';
 import { Text, VStack } from '@chakra-ui/react';
 
 import { Header } from 'components/Header';
+import { Footer } from 'components/Footer';
 
 import '@fontsource/sora';
 
@@ -46,6 +47,7 @@ const AuthRoute = ({ children, ...rest }: AuthRouteProps): JSX.Element => (
 			</VStack>
 			<VStack w={{ base: '85%', md: '70%', xl: '50%' }}>{children}</VStack>
 		</VStack>
+		<Footer />
 	</Route>
 );
 

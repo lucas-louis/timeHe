@@ -29,11 +29,18 @@ export const eventName = 'Name of the event';
 # To change the sub name of your app
 export const eventSubName = 'Sub Name of the event';
 
+# To change the URL of the logo of your app
+export const logoURL =
+	'https://raw.githubusercontent.com/lucas-louis/timeHe/3b35df9a2ff83411f21a283a43932ca51142a20e/.github/assets/timeHe-white-logo.svg';
+
 # To change the color of the background
 export const modalBackgroundColor = '#132b3d';
 
 # To change the color of the title
 export const titleColor = '#0da5a0';
+
+# To change the secondary color of the app
+export const secondaryColor = '#dfb791';
 
 ```
 

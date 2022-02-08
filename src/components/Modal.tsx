@@ -1,7 +1,7 @@
 import { CloseIcon } from '@chakra-ui/icons';
 import { Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Button } from '@chakra-ui/react';
 
-import { modalBackgroundColor, titleColor } from 'config/AppConfig';
+import { modalBackgroundColor, titleColor, secondaryColor } from 'config/AppConfig';
 
 type PopupProps = {
 	isOpen: boolean;
@@ -20,7 +20,7 @@ const Popup = ({ isOpen, onClose, title, children }: PopupProps): JSX.Element =>
 			<ModalBody mb="32px">{children}</ModalBody>
 
 			<ModalFooter flexDirection="column" alignItems="center">
-				<Button w="100%" onClick={onClose} bgColor="#DFB791" id="timeHe-modal-close-button">
+				<Button w="100%" onClick={onClose} bgColor={secondaryColor} id="timeHe-modal-close-button">
 					<CloseIcon />
 				</Button>
 			</ModalFooter>
